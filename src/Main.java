@@ -4,7 +4,11 @@
 //TODO: Add all the method to one
 //TODO: Use scanner to create an input interaction
 //TODO: Then use G
+
 import java.util.Scanner;
+
+
+
 
 
 public class Main {
@@ -52,11 +56,11 @@ public class Main {
     public int division() {
         int divide = numbers[0];
         for (int i = 0; i < numbers.length; i++) {
-           if(numbers[i] != 0) {
-               divide /= numbers[i];
-           }else{
-               System.out.println("You can't divide by zero");
-           }
+            if(numbers[i] != 0) {
+                divide /= numbers[i];
+            }else{
+                System.out.println("You can't divide by zero");
+            }
         }
         return divide;
     }
@@ -64,15 +68,15 @@ public class Main {
     public int modulo() {
         int mode = numbers[0];
         for (int i = 1; i < numbers.length; i++){
-           if(numbers[i] != 0){
-               mode %= numbers[i];
-           }else {
-               System.out.println("The mode is " + mode);
-           }
-    }
-    return mode;
+            if(numbers[i] != 0){
+                mode %= numbers[i];
+            }else {
+                System.out.println("The mode is " + mode);
+            }
+        }
+        return mode;
 
-}
+    }
     public static void main(String[] args) {
         Scanner cal = new Scanner(System.in);
         System.out.println("How many numbers do you want to educate?");
@@ -84,13 +88,14 @@ public class Main {
         for(int i=0; i < firstNumber; i++){
             number[i] = cal.nextInt();//why is this not working?
         }
+        int[] numberLee = calculator.getNumber();
         System.out.println("the numbers added " + calculator.addition());
         System.out.println("the numbers subtracted " + calculator.subtraction());
         System.out.println("the numbers multiplied " + calculator.multiplication());
         System.out.println("the numbers divided " + calculator.division());
         System.out.println("the numbers modulo " + calculator.modulo());
         cal.close();
-}
     }
+}
 
 
