@@ -11,18 +11,21 @@ public class Main {
     private int[] numbers;
 
     public Main(int[] numbers) {
+
         this.numbers = numbers;
     }
 
     public void setNumber(int[] numbers) {
+
         this.numbers = numbers;
     }
 
     public int[] getNumber() {
+
         return numbers;
     }
 
-    public int addition(int secondNumber) {
+    public int addition() {
         int add = 0;
         for (int i = 0; i < numbers.length; i++) {
             add += numbers[i];
@@ -30,7 +33,7 @@ public class Main {
         return add;
     }
 
-    public int subtraction(int secondNumber) {
+    public int subtraction() {
         int sub = 0;
         for (int i = 0; i < numbers.length; i++) {
             sub -= numbers[i];
@@ -38,50 +41,56 @@ public class Main {
         return sub;
     }
 
-    public int multipliaction(int secondNumber) {
-        int multiply = 0;
+    public int multiplication() {
+        int multiply = 1;
         for (int i = 0; i < numbers.length; i++) {
             multiply *= numbers[i];
         }
         return multiply;
     }
 
-    public int division(int secondNumber) {
-        int divide = 0;
+    public int division() {
+        int divide = numbers[0];
         for (int i = 0; i < numbers.length; i++) {
-            divide /= numbers[i];
+           if(numbers[i] != 0) {
+               divide /= numbers[i];
+           }else{
+               System.out.println("You can't divide by zero");
+           }
         }
         return divide;
     }
 
-    public int modulo(int secondNumber) {
-        int mode = 0;
-        for (int i = 0; i < numbers.length; i++){
-            mode %= numbers[i];
+    public int modulo() {
+        int mode = numbers[0];
+        for (int i = 1; i < numbers.length; i++){
+           if(numbers[i] != 0){
+               mode %= numbers[i];
+           }else {
+               System.out.println("The mode is " + mode);
+           }
     }
     return mode;
 
 }
     public static void main(String[] args) {
         Scanner cal = new Scanner(System.in);
-        System.out.println("Hello! What are your numbers?");
+        System.out.println("How many numbers do you want to educate?");
+        int firstNumber = cal.nextInt();//why can't I use an array here?
 
-        int firstNumber = cal.nextInt();//why can't i use an array here?
-
-        /** THESE ARE THE TWO WAYS TO CREATE AN OBJECT
-        Main calculator = new Main(firstNumber);
-        Main calculator2 = new Main(firstNumber)
-         */
-        Main calculator = new Main(new int[]{firstNumber});//why is this an array?
-
-
-        System.out.println("What is the second number");
-        int secondNumber = cal.nextInt();
-        System.out.println("the numbers added " + calculator.addition(secondNumber));
-        System.out.println("the numbers subtracted " + calculator.subtraction(secondNumber));
-        System.out.println("the numbers multiplied " + calculator.multipliaction(secondNumber));
-        System.out.println("the numbers divided " + calculator.division(secondNumber));
-        System.out.println("the numbers modulo " + calculator.modulo(secondNumber));
+        int[] number = new int[firstNumber];
+        Main calculator = new Main(number);//why is this an array?
+        System.out.println("Enter the numbers");
+        for(int i=0; i < firstNumber; i++){
+            number[i] = cal.nextInt();//why is this not working?
+        }
+        System.out.println("the numbers added " + calculator.addition());
+        System.out.println("the numbers subtracted " + calculator.subtraction());
+        System.out.println("the numbers multiplied " + calculator.multiplication());
+        System.out.println("the numbers divided " + calculator.division());
+        System.out.println("the numbers modulo " + calculator.modulo());
         cal.close();
 }
     }
+
+

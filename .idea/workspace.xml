@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3961f4aa-4ede-4fc3-8d39-4615d0f0b7b7" name="Changes" comment="a calculator&#10;update new calculator&#10;working on the constructor">
+    <list default="true" id="3961f4aa-4ede-4fc3-8d39-4615d0f0b7b7" name="Changes" comment="a calculator&#10;update new calculator&#10;working on the constructor&#10;using an array to create multiple numbers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -22,6 +22,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -35,6 +38,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
@@ -82,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703455675759</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="a calculator&#10;update new calculator&#10;working on the constructor&#10;using an array to create multiple numbers">
+      <created>1703459823582</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703459823582</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,6 +111,7 @@
     <MESSAGE value="a calculator" />
     <MESSAGE value="a calculator&#10;update new calculator" />
     <MESSAGE value="a calculator&#10;update new calculator&#10;working on the constructor" />
-    <option name="LAST_COMMIT_MESSAGE" value="a calculator&#10;update new calculator&#10;working on the constructor" />
+    <MESSAGE value="a calculator&#10;update new calculator&#10;working on the constructor&#10;using an array to create multiple numbers" />
+    <option name="LAST_COMMIT_MESSAGE" value="a calculator&#10;update new calculator&#10;working on the constructor&#10;using an array to create multiple numbers" />
   </component>
 </project>
